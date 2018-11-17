@@ -109,7 +109,8 @@
 //
 // Misc. Functions
 //
-#define SDSS               53
+#define SDSS               49
+#define SD_DETECT_PIN      47
 #define LED_PIN            13
 #define PS_ON_PIN          12
 #define CASE_LIGHT_PIN      2
@@ -127,8 +128,8 @@
 #define LCD_PINS_D7        33
 
 // Buttons are directly attached using keypad
-#define BTN_EN1            61
-#define BTN_EN2            59
+#define BTN_EN1            48
+#define BTN_EN2            46
 #define BTN_ENC            43
 
 // Buttons that are attached using shift register of reprapworld keypad  v1.1

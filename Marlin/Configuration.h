@@ -571,7 +571,6 @@
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
-//TODO Check this!
 //#define ENDSTOP_INTERRUPTS_FEATURE
 
 /**
@@ -1432,7 +1431,6 @@
  * you must uncomment the following option or it won't work.
  *
  */
- //TODO SD Card Support
 #define SDSUPPORT
 
 /**

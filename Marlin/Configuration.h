@@ -381,12 +381,10 @@
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
-  // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  #define DEFAULT_Kp 41.89
-  #define DEFAULT_Ki 4.65
-  #define DEFAULT_Kd 94.37
-
+  #define DEFAULT_Kp 41.28
+  #define DEFAULT_Ki 6.00
+  #define DEFAULT_Kd 71.00
 
 #endif // PIDTEMP
 
@@ -602,7 +600,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 158, 6720/16, 1267 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 158, 6720/4, 1267 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -617,7 +615,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 900, 900, 80, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 600, 200, 80, 10000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -639,8 +637,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 20.0
-#define DEFAULT_YJERK                 20.0
+#define DEFAULT_XJERK                 10.0
+#define DEFAULT_YJERK                 2.0
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
@@ -879,7 +877,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 480
+#define Z_MAX_POS 400
 
 /**
  * Software Endstops
